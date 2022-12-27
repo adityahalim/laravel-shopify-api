@@ -27,7 +27,7 @@ class ApiController extends Controller
         return false;
     }
 
-    private function getProducts()
+    public function getProducts()
     {
         $shopify = new Shopify(
             env('SHOPIFY_ACCESS_TOKEN'),
